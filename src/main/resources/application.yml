@@ -1,0 +1,32 @@
+
+server:
+  port: 37979
+  content-path: /
+  
+logging:
+  level:
+    root: info
+    
+spring:
+  datasource:
+    hikari:
+      data1:
+        driver-class-name: oracle.jdbc.OracleDriver
+        type: com.zaxxer.hikari.HikariDataSource
+        jdbcUrl: jdbc:oracle:thin:@localhost:1521:orcl1
+        username: MULTI_DATASOURCES
+        password: rootroot  
+  data2:
+    hikari:
+      driver-class-name: org.postgresql.Driver
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbcUrl: jdbc:postgresql://localhost:5432/multi_datasources
+      username: postgres
+      password: post1234
+      
+      
+
+    
+         
+       
+      
